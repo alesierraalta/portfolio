@@ -5,29 +5,30 @@
 <head>
     <title>Portafolio</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-
 </head>
 <body>
     <header>
         <div style="float: left;">Portafolio</div>
         <div style="float: right;">
-            <a href="">Inicio</a> 
+            <a href="{% url 'index' %}">Inicio</a> 
             <a href="#proyectos">Proyectos</a>
         </div>
     </header>
     <div>
-        <section>
+        <section id="data-analysis">
             <h2>Data Analysis y Machine Learning</h2>
-            <button onclick="location.href='#data-analysis'">Ir ahí</button>
+            <!-- Botón que lleva a inicio-ml.html -->
+            <button onclick="window.location.href='{% url 'inicioml' %}'">Ir ahí</button>
         </section>
-        <section>
+        <section id="sobre-mi">
             <h2>Información sobre mí</h2>
             <button onclick="location.href='#sobre-mi'">Ir ahí</button>
         </section>
-        <section>
+        <section id="redes-sociales">
             <h2>Mis redes sociales</h2>
             <button onclick="location.href='#redes-sociales'">Ir ahí</button>
         </section>
     </div>
 </body>
 </html>
+

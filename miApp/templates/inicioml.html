@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Analysis y Machine Learning</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <style>
+        h1 {
+            margin-top: 50px;
+            margin-left: 50px; /* Aumentar el margen del título */
+        }
+        p {
+            font-size: 20px; /* Aumentar el tamaño de la frase */
+            margin-top: 30px; /* Separación del título */
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="float: left;">Portafolio</div>
+        <div style="float: right;">
+            <a href="{% url 'index' %}">Inicio</a> 
+            <a href="#proyectos">Proyectos</a>
+        </div>
+    </header>
+    <h1>Data Analysis y Machine Learning</h1>
+    <p>Contenido relacionado con Data Analysis y Machine Learning...</p>
+    <!-- Agrega más contenido según sea necesario -->
+  
+</body>
+</html>

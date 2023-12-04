@@ -16,7 +16,7 @@ header {
 }
 
 header div:first-child {
-    font-size: 28px; /* Tamaño más grande para el título Portafolio */
+    font-size: 38px; /* Tamaño más grande para el título Portafolio */
     font-weight: bold;
 }
 
@@ -29,7 +29,7 @@ a {
 
 section {
     background-color: #ffffff; /* Color uniforme para los bloques */
-    margin: 20px;
+    margin: 30px;
     padding: 25px;
     border-radius: 10px; /* Bordes redondeados */
     border: 1px solid #e0e0e0; /* Borde sutil */
@@ -53,4 +53,17 @@ button {
 
 button:hover {
     background-color: #333333;
+}
+
+.content {
+    padding: 20px;
+}
+
+.main-title {
+    margin-bottom: 30px; /* Aumenta el margen debajo del título */
+}
+
+.subtitle {
+    font-size: 18px; /* Aumenta el tamaño de la fuente para la frase */
+    margin-top: 20px; /* Aumenta el margen por encima de la frase */
 }
