@@ -67,3 +67,60 @@ button:hover {
     font-size: 18px; /* Aumenta el tamaño de la fuente para la frase */
     margin-top: 20px; /* Aumenta el margen por encima de la frase */
 }
+
+/* Estilos existentes... */
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos existentes... */
+
+.upload-container {
+    width: 600px; /* Aumento del ancho del contenedor */
+    margin: 30px auto; /* Centrado con margen superior e inferior */
+    padding: 30px; /* Aumento del padding */
+    background-color: #ffffff; /* Color uniforme para los bloques */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 1px solid #e0e0e0; /* Borde sutil */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.drag-drop-zone {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 50px; /* Aumento del padding para mayor altura */
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    display: flex; /* Alineación flexible */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    text-align: center; /* Texto centrado */
+    height: 200px; /* Altura fija para el área de arrastrar y soltar */
+}
+
+/* Resto de estilos... */
+
+.drag-drop-zone:hover {
+    border-color: #333333;
+}
+
+.btn {
+    background-color: #4f4f4f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Hace que los botones ocupen todo el ancho del contenedor */
+    margin-bottom: 10px; /* Espacio entre botones */
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333333;
+}
+
+/* Continúa con otros estilos... */

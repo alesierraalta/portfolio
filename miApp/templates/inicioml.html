@@ -26,7 +26,44 @@
     </header>
     <h1>Data Analysis y Machine Learning</h1>
     <p>Contenido relacionado con Data Analysis y Machine Learning...</p>
-    <!-- Agrega más contenido según sea necesario -->
+    
+
+    <div class="content">
+        <div class="upload-container">
+            <form action="{% url 'upload_file' %}" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <input type="file" name="csv_file" id="csv_file" hidden>
+                <label for="csv_file" class="drag-drop-zone">
+                    Arrastra y suelta tu archivo CSV aquí o haz clic para seleccionar
+                </label>
+                <input type="submit" value="Subir y Procesar" class="btn">
+                <button type="button" class="btn" onclick="document.getElementById('csv_file').click();">Agregar archivo manualmente</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var dropZone = document.getElementById('drop_zone');
+        dropZone.addEventListener('click', function(e) {
+            document.getElementById('csv_file').click();
+        });
+        dropZone.addEventListener('dragover', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            this.style.border = "2px solid #000";
+        });
+        dropZone.addEventListener('dragleave', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            this.style.border = "2px dashed #ccc";
+        });
+        dropZone.addEventListener('drop', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            this.style.border = "2px dashed #ccc";
+            document.getElementById('csv_file').files = e.dataTransfer.files;
+        });
+    </script>
   
 </body>
 </html>
