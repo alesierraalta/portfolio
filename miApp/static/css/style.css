@@ -16,6 +16,7 @@ header {
 }
 
 header div:first-child {
+    /*margin-bottom: 10px;*/
     font-size: 38px; /* Tamaño más grande para el título Portafolio */
     font-weight: bold;
 }
@@ -30,6 +31,8 @@ a {
 section {
     background-color: #ffffff; /* Color uniforme para los bloques */
     margin: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
     padding: 25px;
     border-radius: 10px; /* Bordes redondeados */
     border: 1px solid #e0e0e0; /* Borde sutil */
@@ -68,14 +71,11 @@ button:hover {
     margin-top: 20px; /* Aumenta el margen por encima de la frase */
 }
 
-/* Estilos existentes... */
 
 .content {
     padding: 20px;
     text-align: center;
 }
-
-/* Estilos existentes... */
 
 .upload-container {
     width: 600px; /* Aumento del ancho del contenedor */
@@ -100,8 +100,6 @@ button:hover {
     text-align: center; /* Texto centrado */
     height: 200px; /* Altura fija para el área de arrastrar y soltar */
 }
-
-/* Resto de estilos... */
 
 .drag-drop-zone:hover {
     border-color: #333333;
